@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+
+body {
+  font-family: "Lato", sans-serif;
+  background: rgba(107, 114, 128, 0.8); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Background blur */
+}
+
+main {
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  backdrop-filter: blur(15px); /* Frosted glass effect */
+  padding: 2rem;
+}
+
+button {
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgba(37, 99, 235, 0.8); /* Darker blue on hover */
+}
+
+label {
+  margin-top: 1rem;
+}

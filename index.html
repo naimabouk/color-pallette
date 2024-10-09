@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Color Generator</title>
+  </head>
+  <body class="h-screen p-5 flex flex-col items-center justify-center">
+    <!-- Begin Main Section -->
+    <main
+      class="size-96 rounded-md p-5 flex flex-col items-center justify-around"
+    >
+      <h1
+        class="font-black animate-bounce bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-red-600 uppercase text-xl tracking-widest"
+      >
+        color Generator
+      </h1>
+      <div
+        id="color-div"
+        class="h-48 shadow-md border border-gray-400 w-full transition-colors duration-500 rounded-lg bg-white"
+      ></div>
+      <button
+        class="w-full bg-blue-700 rounded-md h-9 text-white"
+        id="generate-color"
+      >
+        Generate Color
+      </button>
+      <label class="self-start text-white font-bold" for="opacity-range"
+        >Opacity:</label
+      >
+      <input
+        type="range"
+        min="0"
+        title="opacity"
+        max="1"
+        step=".1"
+        class="w-full outline-none opacity-[0.7] transition-opacity"
+        id="opacity-range"
+      />
+    </main>
+    <!-- End Main Section -->
+    <script src="main.js"></script>
+  </body>
+</html>
